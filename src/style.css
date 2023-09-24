@@ -1,0 +1,19 @@
+@font-face {
+  font-family: Totoro;
+  src: url('Spumoni LP Std Regular.otf') format('opentype');
+}
+
+body {
+  background-color: #9ACE8D;
+}
+
+header {
+  font-family: Totoro, sans-serif;
+  text-align: center;
+  font-size: 96px;
+  font-weight: 400;
+  color: white;
+  word-wrap: break-word;
+  padding: 64px 0 65px 0;
+
+}
