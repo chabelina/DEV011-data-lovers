@@ -1,15 +1,65 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Data Lovers</title>
-    <link rel="stylesheet" href="reset.css"/>
-    <link rel="stylesheet" href="style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <script src="main.js" type="module"></script>
     <header>Ghibli Archive</header>
+    <nav>
+      <section>
+        <select data-testid="select-filter" name="filtro" class="filtrar">
+          <option class="opción-filtros" selected disabled hidden>
+            Filtrar
+          </option>
+          <option class="opción-filtros">Director</option>
+          <option class="opción-filtros">Género protagonista</option>
+        </select>
+
+        <label>
+          <select name="sort-order" class="filtros-directores">
+            <option value="director1">Hayao</option>
+            <option value="director2">Isao</option>
+            <option value="director2">Yoshifumi</option>
+          </select>
+        </label>
+        <label>
+          <select class="filtros-genero" name="sort-order">
+            <option value="fem">Femenino</option>
+            <option value="masc">Masculino</option>
+          </select>
+          <button type="reset" data-testid="button-clear" id="reset-button">
+            Limpiar filtros
+          </button>
+        </label>
+      </section>
+      <section>
+        <label>
+          <select data-testid="select-sort" class="orden">
+            <option selected disabled hidden>Ordenar</option>
+            <option value="fecha">Fecha</option>
+            <option value="puntuación">Puntuación películas</option>
+          </select>
+        </label>
+        <label>
+          <select name="sort-order" class="valor-asc-desc">
+            <option value="asc">Ascendente</option>
+            <option value="desc">Descendente</option>
+          </select>
+          <button type="reset" data-testid="button-clear" id="button-clear">
+            Limpiar filtros
+          </button>
+        </label>
+        <label id="about"> Sobre Estudio Ghibli</label>
+      </section>
+    </nav>
   </body>
 </html>
