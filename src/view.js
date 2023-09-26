@@ -6,10 +6,12 @@ export const renderItems = (data) => {
 
   data.forEach((item) => {
     const li = document.createElement("li");
+    li.classList.add("cards");
+    
     li.innerHTML = `
-          <strong>${item.title}</strong>
-          <p>${item.description}</p>
-          <p>Producer: ${item.producer}</p>
+          <img src= "${item.poster}" width="203" height="290">
+          <h3>${item.title}</h3>
+          <p>(${item.release_date})</p>
         `;
     ul.appendChild(li);
   });

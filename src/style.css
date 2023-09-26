@@ -29,6 +29,22 @@ nav {
   align-items: flex-start;
 }
 
+.cards {
+  padding: 22px 27px 43px 27px;
+  margin: 45px 62px;
+  display: inline-flex;
+  flex-direction: column;
+  background: #73B95B;
+  text-align: center;
+  font-family: "Lilita One";
+  font-size: 20px;
+  color:white;
+}
+
+.cards h3{
+  margin-top: 25px;
+}
+
 .filtrar,
 .orden {
   color: white;
@@ -41,8 +57,6 @@ nav {
   text-align: center;
 }
 
-.filtros-directores,
-.filtros-genero,
 .valor-asc-desc {
   color: white;
   margin: 10px 16px 10px 16px;
