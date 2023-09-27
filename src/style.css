@@ -39,6 +39,7 @@ nav {
   font-family: "Lilita One";
   font-size: 20px;
   color:white;
+  max-width: 202px;
 }
 
 .cards h3{
