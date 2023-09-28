@@ -14,32 +14,35 @@
   <body>
     <script src="main.js" type="module"></script>
     <header>Ghibli Archive</header>
+    
     <nav>
+      <label>Filtrar por:</label>
       <section>
+        <label for="director">Director</label>
         <select data-testid="select-filter" name="director" class="filtrar">
-          <option selected disabled hidden>Director</option>
           <option value="director1">Hayao</option>
           <option value="director2">Isao</option>
           <option value="director2">Yoshifumi</option>
         </select>
 
+        <label for="director">Genero protagonistas</label>
         <select
           data-testid="select-filter"
           name="género-protagonistas"
           class="filtrar"
         >
-          <option selected disabled hidden>Género Protagonistas</option>
           <option value="fem">Femenino</option>
           <option value="masc">Masculino</option>
         </select>
-
-        <button type="reset" data-testid="button-clear" id="reset-button">
-          Limpiar filtros
-        </button>
       </section>
+      
+      <button type="reset" data-testid="button-clear" id="button-clear">
+        Limpiar criterios
+      </button>
+
+      <label>Ordenar por:</label>
       <section>
         <select data-testid="select-sort" class="orden">
-          <option selected disabled hidden>Ordenar</option>
           <option value="puntuación">Puntuación películas</option>
         </select>
 
@@ -47,12 +50,7 @@
           <option value="asc">Ascendente</option>
           <option value="desc">Descendente</option>
         </select>
-
-        <button type="reset" data-testid="button-clear" id="button-clear">
-          Limpiar orden
-        </button>
       </section>
-      <button type="button" id="about">Sobre Estudio Ghibli</button>
     </nav>
   </body>
 </html>
