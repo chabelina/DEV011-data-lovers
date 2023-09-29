@@ -1,10 +1,10 @@
 @font-face {
   font-family: Totoro;
-  src: url('Spumoni LP Std Regular.otf') format('opentype');
+  src: url("Spumoni LP Std Regular.otf") format("opentype");
 }
 
 body {
-  background-color: #9ACE8D;
+  background-color: #9ace8d;
 }
 
 header {
@@ -14,6 +14,112 @@ header {
   font-weight: 400;
   color: white;
   word-wrap: break-word;
+<<<<<<< HEAD
   padding: 55px 0 55px 0;
+=======
+  padding: 64px 0 65px 0;
+}
+>>>>>>> ee9eaa2182bddd046fa0812961f1d0f21d08e59f
 
+nav {
+  height: 100%;
+  background: #c7fa86;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 45px;
+  border: 1px black solid;
+  padding: 52px 30px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.criteria {
+  background:#f3a281;
+  padding: 10px;
+  margin-left: auto;
+  font-family: "Lilita One";
+  border-radius: 45px;
+  font-size: x-large;
+  color: white;
+}
+
+section label{
+  font-family: "Lilita One";
+}
+
+.cards {
+  padding: 22px 27px 43px 27px;
+  margin: 45px 62px;
+  display: inline-flex;
+  flex-direction: column;
+  background: #73B95B;
+  text-align: center;
+  font-family: "Lilita One";
+  font-size: 20px;
+  color:white;
+  max-width: 202px;
+}
+
+.cards h3{
+  margin-top: 25px;
+}
+
+.filtrar,
+.orden {
+  color: white;
+  margin: 20px 16px;
+  font-size: x-large;
+  font-family: "Lilita One";
+  background: #709fcd;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+.valor-asc-desc {
+  color: white;
+  margin: 10px 16px 10px 16px;
+  font-family: "Lilita One";
+  font-size: x-large;
+  background: #709fcd;
+  border-radius: 20px;
+  text-align: center;
+  padding: 10px;
+}
+
+#button-clear {
+  padding: 15px;
+  background: #73b95b;
+  border-radius: 20px;
+  font-family: "Lilita One";
+  color: white;
+  border: #73b95b;
+  margin: 10px 16px 10px 16px;
+  font-size: large;
+  cursor: pointer;
+  box-shadow: 0px 3px 0px darkgreen;
+}
+
+#about {
+  color: white;
+  margin: 20px 16px;
+  font-size: x-large;
+  font-family: "Lilita One";
+  background: #709fcd;
+  border: #709fcd;
+  border-radius: 20px;
+  padding: 10px;
+  text-align: center;
+}
+
+footer{
+  text-align: center;
+  padding: 60px;
+  color: black;
+  font-family: "Lilita One";
+  font-weight: bold;
+  font-size: larger;
+  background:#C7FA86;
 }
