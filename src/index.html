@@ -1,15 +1,64 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Data Lovers</title>
-    <link rel="stylesheet" href="reset.css"/>
-    <link rel="stylesheet" href="style.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
 
   <body>
     <script src="main.js" type="module"></script>
     <header>Ghibli Archive</header>
+    
+    <nav>
+      <label class="criteria">Filtrar por:</label>
+      <section>
+        <label for="director">Director</label>
+        <select data-testid="select-filter" name="director" class="filtrar">
+          <option value="director1">Hayao</option>
+          <option value="director2">Isao</option>
+          <option value="director2">Yoshifumi</option>
+        </select>
+
+        <label for="director">Genero protagonistas</label>
+        <select
+          data-testid="select-filter"
+          name="género-protagonistas"
+          class="filtrar"
+        >
+          <option value="fem">Femenino</option>
+          <option value="masc">Masculino</option>
+        </select>
+      </section>
+      
+      <button type="reset" data-testid="button-clear" id="button-clear">
+        Limpiar criterios
+      </button>
+
+      <label class="criteria">Ordenar por:</label>
+      <section>
+        <select data-testid="select-sort" class="orden">
+          <option value="puntuación">Puntuación películas</option>
+        </select>
+
+        <select name="sort-order" class="valor-asc-desc">
+          <option value="asc">Ascendente</option>
+          <option value="desc">Descendente</option>
+        </select>
+      </section>
+    </nav>
+
+    <main id="root">
+      <ul id="database-list"></ul>
+    </main>
+
+    <footer>
+      <p>© Copyright - Josefa & Elizabeth 2023</p>
+    </footer>
   </body>
 </html>
