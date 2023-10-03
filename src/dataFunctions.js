@@ -6,17 +6,25 @@ export const filterData = (data, filterBy, value) => {
 };
 
 export const filterByGender = (data, filterBy, value) => {
-  let filteredFilms = [];
+  const filteredFilms = [];
   data.forEach((film) => {
     // Access and manipulate the first character's "gender" data
     const firstCharacterGender = film.people[0][filterBy];
-    
+
     if (firstCharacterGender === value) {
       filteredFilms.push(film);
     }
-
-    // Log or manipulate the data as needed
-
   });
   return filteredFilms;
+};
+
+export const sortData = (data, sortBy, sortOrder) => {
+  return data.sort((a, b) => {
+    // Convertir las cadenas a números
+    const numA = Number(a[sortBy]);
+    const numB = Number(b[sortBy]);
+
+    // Realizar la comparación
+    return sortOrder === "asc" ? numA - numB : numB - numA;
+  });
 };
