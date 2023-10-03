@@ -1,5 +1,6 @@
 import { filterData } from "./dataFunctions.js";
 import { renderItems } from "./view.js";
+import { filterByGender } from "./dataFunctions.js";
 //import { renderFilteredMovies } from "./view.js";
 
 import data from "./data/ghibli/ghibli.js";
@@ -17,11 +18,11 @@ directorOptions.addEventListener("change", () => {
   );
   renderItems(filteredMovies);
 });
-  
+
 const genderOptions = document.querySelector("#gender-options");
 
 genderOptions.addEventListener("change", () => {
-  const filteredMovies = filterData(
+  const filteredMovies = filterByGender(
     data.films,
     "gender",
     genderOptions.value

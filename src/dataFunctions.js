@@ -5,17 +5,18 @@ export const filterData = (data, filterBy, value) => {
   return filteredMovies;
 };
 
-
-
 export const filterByGender = (data, filterBy, value) => {
-  data.films.forEach((film) => {
+  let filteredFilms = [];
+  data.forEach((film) => {
     // Access and manipulate the first character's "gender" data
-    const firstCharacterGender = film.people[0].gender;
+    const firstCharacterGender = film.people[0][filterBy];
+    
+    if (firstCharacterGender === value) {
+      filteredFilms.push(film);
+    }
 
     // Log or manipulate the data as needed
-    console.log(
-      `Film: ${film.title}, Protagonist Gender: ${firstCharacterGender}`
-    );
+
   });
-  return [];
+  return filteredFilms;
 };
