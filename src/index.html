@@ -45,25 +45,18 @@
         </select>
       </section>
 
-      <button type="reset" data-testid="button-clear" id="button-clear">
-        Limpiar criterios
-      </button>
-
       <label class="criteria">Ordenar por:</label>
       <section>
-        <label for="puntaje">
-          Puntuación
-        </label>
-        <select
-          data-testid="select-sort"
-          name="puntaje"
-          class="valor-asc-desc"
-          id="sort-order"
-        >
+        <label for="Puntaje">Puntuación</label>
+        <select name="sort-order" class="valor-asc-desc" id="sort-order">
           <option value="asc">Ascendente</option>
           <option value="desc">Descendente</option>
         </select>
       </section>
+
+      <button type="reset" data-testid="button-clear" id="button-clear">
+        Limpiar criterios
+      </button>
     </nav>
 
     <main id="root">
