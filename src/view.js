@@ -18,5 +18,4 @@ export const renderItems = (data) => {
   return ul.innerHTML
 };
 
-//function viewFilteredData = (hayaoMovies) => {}
 
