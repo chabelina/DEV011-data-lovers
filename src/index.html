@@ -19,10 +19,13 @@
       <label class="criteria">Filtrar por:</label>
       <section>
         <label for="director">Director</label>
-        <select data-testid="select-filter" name="director" class="filtrar">
-          <option value="director1">Hayao</option>
-          <option value="director2">Isao</option>
-          <option value="director2">Yoshifumi</option>
+        <select data-testid="select-filter" name="director" class="filtrar" id="director-options">
+          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+          <option value="Isao Takahata">Isao Takahata</option>
+          <option value="Yoshifumi Kondō">Yoshifumi Kondo</option>
+          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+          <option value="Gorō Miyazaki">Goro Miyazaki</option>
+          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
         </select>
 
         <label for="director">Genero protagonistas</label>
@@ -30,9 +33,10 @@
           data-testid="select-filter"
           name="género-protagonistas"
           class="filtrar"
+          id="gender-options"
         >
-          <option value="fem">Femenino</option>
-          <option value="masc">Masculino</option>
+          <option value="Female">Femenino</option>
+          <option value="Male">Masculino</option>
         </select>
       </section>
       
