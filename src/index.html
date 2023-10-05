@@ -14,12 +14,17 @@
   <body>
     <script src="main.js" type="module"></script>
     <header>Ghibli Archive</header>
-    
+
     <nav>
       <label class="criteria">Filtrar por:</label>
       <section>
         <label for="director">Director</label>
-        <select data-testid="select-filter" name="director" class="filtrar" id="director-options">
+        <select
+          data-testid="select-filter"
+          name="director"
+          class="filtrar"
+          id="director-options"
+        >
           <option value="Hayao Miyazaki">Hayao Miyazaki</option>
           <option value="Isao Takahata">Isao Takahata</option>
           <option value="Yoshifumi Kondō">Yoshifumi Kondo</option>
@@ -39,22 +44,19 @@
           <option value="Male">Masculino</option>
         </select>
       </section>
-      
-      <button type="reset" data-testid="button-clear" id="button-clear">
-        Limpiar criterios
-      </button>
 
       <label class="criteria">Ordenar por:</label>
       <section>
-        <select data-testid="select-sort" class="orden">
-          <option value="puntuación">Puntuación películas</option>
-        </select>
-
-        <select name="sort-order" class="valor-asc-desc">
+        <label for="Puntaje">Puntuación</label>
+        <select name="sort-order" class="valor-asc-desc" id="sort-order">
           <option value="asc">Ascendente</option>
           <option value="desc">Descendente</option>
         </select>
       </section>
+
+      <button type="reset" data-testid="button-clear" id="button-clear">
+        Limpiar criterios
+      </button>
     </nav>
 
     <main id="root">
