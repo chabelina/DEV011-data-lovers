@@ -19,7 +19,8 @@ export const filterByGender = (data, filterBy, value) => {
 };
 
 export const sortData = (data, sortBy, sortOrder) => {
-  return data.sort((a, b) => {
+  const cloneData = [...data];
+  return cloneData.sort((a, b) => {
     // Convertir las cadenas a números
     const numA = Number(a[sortBy]);
     const numB = Number(b[sortBy]);
