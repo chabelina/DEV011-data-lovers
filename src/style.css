@@ -32,7 +32,7 @@ nav {
 }
 
 .criteria {
-  background:#f3a281;
+  background: #f3a281;
   padding: 10px;
   margin-left: auto;
   font-family: "Lilita One";
@@ -41,9 +41,21 @@ nav {
   color: white;
 }
 
-section label{
+section label {
   font-family: "Lilita One";
   font-size: larger;
+}
+
+h2 {
+  margin: 30px auto 0;
+  text-align: center;
+  font-family: "Lilita One";
+  font-size: x-large;
+  background: #ef9779;
+  width: fit-content;
+  padding: 8px;
+  border-radius: 30px;
+  color: white;
 }
 
 .cards {
@@ -51,15 +63,15 @@ section label{
   margin: 45px 62px;
   display: inline-flex;
   flex-direction: column;
-  background: #73B95B;
+  background: #73b95b;
   text-align: center;
   font-family: "Lilita One";
   font-size: 20px;
-  color:white;
+  color: white;
   max-width: 202px;
 }
 
-.cards h3{
+.cards h3 {
   margin-top: 25px;
 }
 
@@ -111,12 +123,12 @@ section label{
   text-align: center;
 }
 
-footer{
+footer {
   text-align: center;
   padding: 60px;
   color: black;
   font-family: "Lilita One";
   font-weight: bold;
   font-size: larger;
-  background:#C7FA86;
+  background: #c7fa86;
 }
