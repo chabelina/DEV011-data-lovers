@@ -30,17 +30,15 @@ export const sortData = (data, sortBy, sortOrder) => {
 };
 
 export const computeStats = (data) => {
-  let result = data.reduce((acc, item) => {
-    let nonHumanCount = item.people.reduce((count, person) => {
+  const result = data.reduce((acc, item) => {
+    const nonHumanCount = item.people.reduce((count, person) => {
       return count + (person.specie !== "Human" ? 1 : 0);
     }, 0);
     return acc + nonHumanCount;
   }, 0);
-  console.log("Nro de No Humanos: ", result);
-  let totalCount = data.reduce((acc, item) => acc + item.people.length, 0);
-  console.log("Nro de Personajes: ", totalCount);
+  //console.log("Nro de No Humanos: ", result);
+  const totalCount = data.reduce((acc, item) => acc + item.people.length, 0);
+  //console.log("Nro de Personajes: ", totalCount);
   const nonHumanPercentage = (result / totalCount) * 100;
   return parseFloat(nonHumanPercentage.toFixed(0));
 };
-
- 
