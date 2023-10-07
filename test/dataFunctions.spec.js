@@ -2266,7 +2266,6 @@ describe("computeStats", () => {
         vehicles: [],
       },
     ];
-    const percentageResults = computeStats(simulatedData);
-    expect(computeStats(simulatedData)).toEqual(percentageResults);
+    expect(computeStats(simulatedData)).toEqual(33);
   });
 });
