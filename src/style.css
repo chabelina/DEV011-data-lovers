@@ -5,6 +5,9 @@
 
 body {
   background-color: #9ace8d;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 header {
@@ -58,10 +61,18 @@ h2 {
   color: white;
 }
 
+#root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#database-list {
+flex-direction: row;
+}
 .cards {
   padding: 22px 27px 43px 27px;
   margin: 45px 62px;
-  display: inline-flex;
   flex-direction: column;
   background: #73b95b;
   text-align: center;
