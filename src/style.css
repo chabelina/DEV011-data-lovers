@@ -66,11 +66,16 @@ h2 {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-wrap: wrap;
 }
+
 #database-list {
+display: inherit;
+justify-content: inherit;
+align-items: inherit;
 flex-direction: row;
+flex-wrap: wrap;
 }
+
 .cards {
   padding: 22px 27px 43px 27px;
   margin: 45px 62px;
