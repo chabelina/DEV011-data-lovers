@@ -6,7 +6,7 @@ elementos de un arreglo de 100, por eso vas a crear una muestra de la data que
 quieres probar. Al mínimo debes exportar un variable se llama data, pero puedes definir 
 y exportar mas si sea necesario para tus tests.
 */
-export const fakeData = [
+export const data = [
   {
     id: "ea660b10-85c4-4ae3-8a5f-41cea3648e3e",
     title: "Kiki's Delivery Service",

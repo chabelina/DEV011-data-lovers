@@ -82,8 +82,8 @@ h2 {
   margin-top: 25px;
 }
 
-.filtrar,
-.orden {
+#gender-options, 
+#director-options {
   color: #fbfce6;
   margin: 20px 16px;
   font-size: x-large;
@@ -94,7 +94,7 @@ h2 {
   text-align: center;
 }
 
-.valor-asc-desc {
+#sort-order {
   color: #fbfce6;
   margin: 10px 16px 10px 16px;
   font-family: "Lilita One";
