@@ -18,13 +18,12 @@
     </header>
 
     <nav>
-      <label class="criteria">Filtrar por:</label>
+      <label class="criteria" for="">Filtrar por:</label>
       <section>
-        <label for="director">Director</label>
+        <label for="director-options">Director</label>
         <select
           data-testid="select-filter"
           name="director"
-          class="filtrar"
           id="director-options"
         >
           <option value="Hayao Miyazaki">Hayao Miyazaki</option>
@@ -35,11 +34,10 @@
           <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
         </select>
 
-        <label for="director">Genero protagonistas</label>
+        <label for="gender-options">Genero protagonistas</label>
         <select
-          data-testid="select-filter"
+          data-testid="select-filter2"
           name="género-protagonistas"
-          class="filtrar"
           id="gender-options"
         >
           <option value="Female">Femenino</option>
@@ -47,10 +45,10 @@
         </select>
       </section>
 
-      <label class="criteria">Ordenar por:</label>
+      <label class="criteria" for="">Ordenar por:</label>
       <section>
-        <label for="Puntaje">Puntuación</label>
-        <select name="sort-order" class="valor-asc-desc" id="sort-order">
+        <label for="sort-order">Puntuación</label>
+        <select name="sort-order"  data-testid="select-sort" id="sort-order">
           <option value="asc">Ascendente</option>
           <option value="desc">Descendente</option>
         </select>
@@ -64,7 +62,7 @@
     <h2 id="percentage-nonHuman"></h2>
 
     <main id="root">
-      <ul id="database-list"></ul>
+      <!-- <ul id="database-list"></ul> -->
     </main>
 
     <footer>

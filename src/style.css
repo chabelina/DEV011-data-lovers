@@ -15,7 +15,7 @@ header {
   text-align: center;
   font-size: 96px;
   font-weight: 400;
-  color: white;
+  color: #fbfce6;
   word-wrap: break-word;
   padding: 55px 0 55px 0;
 }
@@ -25,8 +25,7 @@ nav {
   background: #c7fa86;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 45px;
-  border: 1px black solid;
-  padding: 52px 30px;
+  padding: 45px 30px;
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
@@ -41,12 +40,14 @@ nav {
   font-family: "Lilita One";
   border-radius: 45px;
   font-size: x-large;
-  color: white;
+  color: #fbfce6;
 }
 
 section label {
   font-family: "Lilita One";
-  font-size: larger;
+  font-size: x-large;
+  color: rgb(49, 48, 49);
+  
 }
 
 h2 {
@@ -58,7 +59,7 @@ h2 {
   width: fit-content;
   padding: 8px;
   border-radius: 30px;
-  color: white;
+  color: #fbfce6;
 }
 
 #root {
@@ -74,32 +75,38 @@ flex-direction: row;
   padding: 22px 27px 43px 27px;
   margin: 45px 62px;
   flex-direction: column;
-  background: #73b95b;
+  background: #61a848;
   text-align: center;
   font-family: "Lilita One";
   font-size: 20px;
-  color: white;
+  color: #e7e9c4;
   max-width: 202px;
+  border-radius: 15px;
+  border: 2px solid darkgreen;
+  box-shadow: 0px 3px 0px darkgreen;
 }
-
+.poster {
+  border-radius: 15px;
+  border: solid 5px #e4e87c;
+}
 .cards h3 {
   margin-top: 25px;
 }
 
-.filtrar,
-.orden {
-  color: white;
+#gender-options, 
+#director-options {
+  color: #fbfce6;
   margin: 20px 16px;
   font-size: x-large;
   font-family: "Lilita One";
   background: #709fcd;
   border-radius: 20px;
-  padding: 10px;
+  padding: 10px; 
   text-align: center;
 }
 
-.valor-asc-desc {
-  color: white;
+#sort-order {
+  color: #fbfce6;
   margin: 10px 16px 10px 16px;
   font-family: "Lilita One";
   font-size: x-large;
@@ -114,24 +121,12 @@ flex-direction: row;
   background: #73b95b;
   border-radius: 20px;
   font-family: "Lilita One";
-  color: white;
+  color: #fbfce6;
   border: #73b95b;
   margin: 10px 16px 10px 16px;
   font-size: large;
   cursor: pointer;
   box-shadow: 0px 3px 0px darkgreen;
-}
-
-#about {
-  color: white;
-  margin: 20px 16px;
-  font-size: x-large;
-  font-family: "Lilita One";
-  background: #709fcd;
-  border: #709fcd;
-  border-radius: 20px;
-  padding: 10px;
-  text-align: center;
 }
 
 footer {
