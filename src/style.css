@@ -43,7 +43,7 @@ nav {
   color: #fbfce6;
 }
 
-#filter-selections-container{
+.filter-selections-container{
   display: inherit;
   flex-direction: inherit;
   justify-content: center;

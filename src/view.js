@@ -1,10 +1,10 @@
 // estas funciones son de ejemplo
 
-export const renderItems = (data, percentage=0) => {
+export const renderItems = (data, percentage = 0) => {
   // const ul = document.getElementById("database-list");
   const main = document.getElementById("root");
-  const ul = document.createElement('ul')
-  ul.setAttribute('id', 'database-list')
+  const ul = document.createElement("ul");
+  ul.setAttribute("id", "database-list");
   main.innerHTML = "";
   ul.innerHTML = ""; // Clear the list before populating it
 
@@ -13,6 +13,8 @@ export const renderItems = (data, percentage=0) => {
   
   data.forEach((item) => {
     const li = document.createElement("li");
+    li.setAttribute("itemscope", "http://schema.org/Movie");
+    li.setAttribute("itemtype", "http://schema.org/Movie");
     li.classList.add("cards");
 
     li.innerHTML = `
