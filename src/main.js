@@ -8,8 +8,6 @@ import {
 
 import data from "./data/ghibli/ghibli.js";
 
-//console.log('DAT GHIBLI: ', data);
-
 const nonHumanSpeciesPercent = computeStats(data.films);
 renderItems(data.films, nonHumanSpeciesPercent);
 
