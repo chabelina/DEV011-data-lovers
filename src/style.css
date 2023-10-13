@@ -28,7 +28,7 @@ nav {
   padding: 45px 30px;
   display: flex;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 30px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
@@ -126,7 +126,7 @@ flex-wrap: wrap;
 
 #sort-order {
   color: #fbfce6;
-  margin: 10px 16px 0px 16px;
+  margin: 20px 16px 0px 16px;
   font-family: "Lilita One";
   font-size: x-large;
   background: #709fcd;
@@ -136,16 +136,21 @@ flex-wrap: wrap;
 }
 
 #button-clear {
-  padding: 15px;
+  padding: 10px 15px;
   background: #73b95b;
   border-radius: 20px;
   font-family: "Lilita One";
   color: #fbfce6;
   border: #73b95b;
   margin: 10px 16px 10px 16px;
-  font-size: large;
+  font-size: x-large;
   cursor: pointer;
   box-shadow: 0px 3px 0px darkgreen;
+}
+#broom{
+  height: 25px;
+  width: 25px;
+  vertical-align: middle;
 }
 
 footer {

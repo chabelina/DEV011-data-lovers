@@ -9,7 +9,7 @@ export const renderItems = (data, percentage=0) => {
   ul.innerHTML = ""; // Clear the list before populating it
 
   const h2 = document.getElementById("percentage-nonHuman");
-  h2.innerHTML = `¿Sabías que? El porcentaje de personajes No-Humanos en las películas Ghibli es del ${percentage} %`;
+  h2.innerHTML = `¿Sabías qué? El porcentaje de personajes No-Humanos en las películas Ghibli es del ${percentage} %`;
   
   data.forEach((item) => {
     const li = document.createElement("li");
