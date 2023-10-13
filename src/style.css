@@ -31,19 +31,33 @@ nav {
   gap: 20px;
   flex-direction: row;
   align-items: center;
+  justify-content: center;
 }
 
 .criteria {
   background: #f3a281;
   padding: 10px;
-  margin-left: auto;
   font-family: "Lilita One";
   border-radius: 45px;
   font-size: x-large;
   color: #fbfce6;
 }
 
-section label {
+#filter-selections-container{
+  display: inherit;
+  flex-direction: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+.style-container {
+  display: inherit;
+  flex-direction: column;
+    justify-content: inherit;
+  align-items: inherit;
+}
+
+.black-labels {
   font-family: "Lilita One";
   font-size: x-large;
   color: rgb(49, 48, 49);
@@ -101,7 +115,7 @@ flex-wrap: wrap;
 #gender-options, 
 #director-options {
   color: #fbfce6;
-  margin: 20px 16px;
+  margin: 20px 16px 0 16px;
   font-size: x-large;
   font-family: "Lilita One";
   background: #709fcd;
@@ -112,7 +126,7 @@ flex-wrap: wrap;
 
 #sort-order {
   color: #fbfce6;
-  margin: 10px 16px 10px 16px;
+  margin: 10px 16px 0px 16px;
   font-family: "Lilita One";
   font-size: x-large;
   background: #709fcd;

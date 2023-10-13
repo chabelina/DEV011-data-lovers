@@ -18,40 +18,48 @@
     </header>
 
     <nav>
-      <label class="criteria" for="">Filtrar por:</label>
-      <section>
-        <label for="director-options">Director</label>
-        <select
-          data-testid="select-filter"
-          name="director"
-          id="director-options"
-        >
-          <option value="Hayao Miyazaki">Hayao Miyazaki</option>
-          <option value="Isao Takahata">Isao Takahata</option>
-          <option value="Yoshifumi Kondō">Yoshifumi Kondo</option>
-          <option value="Hiroyuki Morita">Hiroyuki Morita</option>
-          <option value="Gorō Miyazaki">Goro Miyazaki</option>
-          <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
-        </select>
+      <section id="filter-selections-container">
+        <label class="criteria" for="">Filtrar por:</label>
+        <div class="style-container">
+          <label for="director-options" class="black-labels">Director</label>
+          <select
+            data-testid="select-filter"
+            name="director"
+            id="director-options"
+          >
+            <option value="Hayao Miyazaki">Hayao Miyazaki</option>
+            <option value="Isao Takahata">Isao Takahata</option>
+            <option value="Yoshifumi Kondō">Yoshifumi Kondo</option>
+            <option value="Hiroyuki Morita">Hiroyuki Morita</option>
+            <option value="Gorō Miyazaki">Goro Miyazaki</option>
+            <option value="Hiromasa Yonebayashi">Hiromasa Yonebayashi</option>
+          </select>
+        </div>
 
-        <label for="gender-options">Genero protagonistas</label>
-        <select
-          data-testid="select-filter2"
-          name="género-protagonistas"
-          id="gender-options"
-        >
-          <option value="Female">Femenino</option>
-          <option value="Male">Masculino</option>
-        </select>
+        <div class="style-container">
+          <label for="gender-options" class="black-labels"
+            >Genero protagonistas</label
+          >
+          <select
+            data-testid="select-filter2"
+            name="género-protagonistas"
+            id="gender-options"
+          >
+            <option value="Female">Femenino</option>
+            <option value="Male">Masculino</option>
+          </select>
+        </div>
       </section>
 
-      <label class="criteria" for="">Ordenar por:</label>
-      <section>
-        <label for="sort-order">Puntuación</label>
-        <select name="sort-order"  data-testid="select-sort" id="sort-order">
-          <option value="asc">Ascendente</option>
-          <option value="desc">Descendente</option>
-        </select>
+      <section id="filter-selections-container">
+        <label class="criteria" for="">Ordenar por:</label>
+        <div class="style-container">
+          <label for="sort-order" class="black-labels">Puntuación</label>
+          <select name="sort-order" data-testid="select-sort" id="sort-order">
+            <option value="asc">Ascendente</option>
+            <option value="desc">Descendente</option>
+          </select>
+        </div>
       </section>
 
       <button type="reset" data-testid="button-clear" id="button-clear">
